@@ -8,7 +8,7 @@
   "scripts": {
     "start": "node src/index.js",
     "test": "jest",
-    "test:watch": "jest -w"
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "body-parser": "^1.19.2",
