@@ -1,5 +1,6 @@
 const { Router } = require("express");
 const { KnexRepository } = require("./db/Repository");
+const { createToken, extractDataFromToken } = require("./utils/tokens");
 
 const users = new KnexRepository('users');
 const accounts = new KnexRepository('accounts');
@@ -9,8 +10,8 @@ const router = Router();
 
 router.post('/users', async (req, res) => {
     try {
-        await users.create(req.body);
-        const token = '';
+        const [id] = await users.create(req.body);
+        const token = createToken(id);
 
         res.json({
             message: 'success',

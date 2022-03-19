@@ -33,10 +33,11 @@ it('should create the user account when all required fields are provided', async
             .expect(400);
     }
 
-    await request(app)
+    const response = await request(app)
         .post('/users/')
         .send(finalUserObj)
         .expect(200);
+    expect(response.body.token).toBeDefined();
 });
 
 it.skip('should allow the user perform fund and withdraw operation on the account', function (done) {
