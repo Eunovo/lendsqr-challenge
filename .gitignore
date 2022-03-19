@@ -104,4 +104,4 @@ dist
 .tern-port
 
 # SQLite dev db
-dev.sqlite3
+*.sqlite3
