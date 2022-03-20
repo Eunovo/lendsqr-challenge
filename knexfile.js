@@ -34,10 +34,10 @@ module.exports = {
   production: {
     client: 'mysql',
     connection: {
-      host: '3.143.162.39',
-      database: 'lendsqr_challenge',
-      user:     'lender',
-      password: 'lEnd3Rlife#'
+      host: process.env.DB_HOST,
+      database: process.env.DB_NAME,
+      user:     process.env.DB_USER,
+      password: process.env.DB_PWD
     },
     migrations: {
       tableName: 'knex_migrations'
