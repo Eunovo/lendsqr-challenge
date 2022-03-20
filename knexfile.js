@@ -34,6 +34,7 @@ module.exports = {
   production: {
     client: 'mysql',
     connection: {
+      host: '3.143.162.39',
       database: 'lendsqr_challenge',
       user:     'lender',
       password: 'lEnd3Rlife#'
