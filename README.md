@@ -1,8 +1,8 @@
-#### LendSQR Challenge
+# LendSQR Challenge
 
 This demo application provides a simple REST API that allows a user to sign up and perform simple operations on their accounts.
 
-### API
+## API
 
 `POST /users`
 Creates a new user
@@ -22,7 +22,7 @@ Creates a new user
 ```
 
 `GET /accounts`
-Get all user accounts
+Get all user accounts  
 **Requires that a bearer token is set in the 'Authorization' header**
 ```
 // Success Response
@@ -41,7 +41,7 @@ Get all user accounts
 ```
 
 `POST /accounts/fund`
-Fund an account
+Fund an account  
 **Requires that a bearer token is set in the 'Authorization' header**
 ```
 // Request Body
@@ -57,7 +57,7 @@ Fund an account
 ```
 
 `POST /accounts/withdraw`
-Withdraw from an account
+Withdraw from an account  
 **Requires that a bearer token is set in the 'Authorization' header**
 ```
 // Request Body
@@ -73,7 +73,7 @@ Withdraw from an account
 ```
 
 `POST /accounts/transfer`
-Transfer from one account to another
+Transfer from one account to another  
 **Requires that a bearer token is set in the 'Authorization' header**
 ```
 // Request Body
