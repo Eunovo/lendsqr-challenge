@@ -6,8 +6,8 @@
   "author": "Eunovo <eunovo9@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "postinstall": "migrate",
-    "migrate": "knex migrate:latest",
+    "postinstall": "yarn migrate",
+    "migrate": "yarn knex migrate:latest",
     "start": "node src/index.js",
     "test": "jest",
     "test:watch": "jest --watch"
@@ -24,5 +24,8 @@
     "@vscode/sqlite3": "^5.0.7",
     "supertest": "^6.2.2",
     "jest": "^27.5.1"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
