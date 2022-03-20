@@ -6,6 +6,8 @@
   "author": "Eunovo <eunovo9@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "postinstall": "migrate",
+    "migrate": "knex migrate:latest",
     "start": "node src/index.js",
     "test": "jest",
     "test:watch": "jest --watch"
